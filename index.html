@@ -9,30 +9,28 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Le Laboratoire de l’Intégrité Académique.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Le Laboratoire de l’Intégrité Académique" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="AI-ETHICS-GAME-005" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="25,25" size="100,100">&lt;img src=&quot;laboratoire.png&quot; alt=&quot;Laboratoire&quot; width=&quot;80%&quot;&gt;
+<tw-storydata name="Le Laboratoire de l’Intégrité Académique" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="AI-ETHICS-GAME-FINAL-002" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="25,25" size="100,100">(set: $code to &quot;&quot;)
+
+&lt;img src=&quot;laboratoire.png&quot; width=&quot;80%&quot;&gt;
 
 Vous êtes enfermés dans le **Laboratoire de l’Intégrité Académique**.
-
-Un message clignote sur l’écran central :
 
 &gt; *« Des usages problématiques de l’IA ont été détectés.  
 Votre mission est d’enquêter, de corriger les pratiques et de restaurer l’intégrité académique. »*
 
-Quatre zones sont accessibles :
+Zones accessibles :
 
 [[Explorer le bureau des devoirs-&gt;Bureau]]
 [[Consulter le journal des prompts-&gt;Prompts]]
 [[Vérifier la charte universitaire-&gt;Charte]]
 [[Accéder au terminal de sortie-&gt;Sortie]]
 
----</tw-passagedata><tw-passagedata pid="2" name="Bureau" tags="" position="150,25" size="100,100">&lt;img src=&quot;bureau.png&quot; alt=&quot;Bureau des devoirs&quot; width=&quot;70%&quot;&gt;
-
-Vous entrez dans le **bureau des devoirs**.
+---</tw-passagedata><tw-passagedata pid="2" name="Bureau" tags="" position="150,25" size="100,100">&lt;img src=&quot;bureau.png&quot; width=&quot;70%&quot;&gt;
 
 Un devoir étudiant est ouvert à l’écran.  
-Un paragraphe attire votre attention : il est très bien rédigé… peut-être trop.
+Un paragraphe est particulièrement bien rédigé.
 
-Aucune mention de l’IA n’apparaît dans le document.
+Aucune mention de l’IA n’apparaît.
 
 Que faites-vous ?
 
@@ -40,43 +38,38 @@ Que faites-vous ?
 [[Supprimer le paragraphe-&gt;BureauSupprimer]]
 [[Ajouter une déclaration d’usage de l’IA-&gt;BureauDeclarer]]
 
----</tw-passagedata><tw-passagedata pid="3" name="BureauModifier" tags="" position="275,25" size="100,100">Vous modifiez légèrement le texte pour le rendre moins reconnaissable.
+---</tw-passagedata><tw-passagedata pid="3" name="BureauModifier" tags="" position="275,25" size="100,100">Vous modifiez légèrement le texte.
 
-Le devoir semble propre,  
-mais un malaise persiste.
-
-L’intégrité académique n’est pas réellement restaurée.
+Le devoir semble plus naturel,  
+mais l’intégrité académique n’est pas réellement restaurée.
 
 [[Retour au laboratoire-&gt;Start]]
 
 ---</tw-passagedata><tw-passagedata pid="4" name="BureauSupprimer" tags="" position="400,25" size="100,100">Vous supprimez le paragraphe.
 
 Le devoir est maintenant incomplet.  
-Ce choix évite le problème sans le résoudre.
+Le problème est évité, mais non résolu.
 
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="5" name="BureauDeclarer" tags="" position="525,25" size="100,100">Vous ajoutez une déclaration expliquant clairement comment l’IA a été utilisée,
-puis vous reformulez le texte avec vos propres mots.
+---</tw-passagedata><tw-passagedata pid="5" name="BureauDeclarer" tags="" position="525,25" size="100,100">Vous ajoutez une déclaration expliquant clairement l’usage de l’IA  
+et reformulez le texte avec vos propres mots.
 
-Un tiroir s’ouvre sous le bureau.
+Un tiroir s’ouvre.
 
-&lt;img src=&quot;code_papier.png&quot; alt=&quot;Indice&quot; width=&quot;40%&quot;&gt;
+&lt;img src=&quot;code_papier.png&quot; width=&quot;40%&quot;&gt;
 
-🔑 **Vous trouvez un chiffre : 7**
+🔑 **Indice trouvé : 7**
 
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="6" name="Prompts" tags="" position="650,25" size="100,100">&lt;img src=&quot;journal_prompts.png&quot; alt=&quot;Journal des prompts&quot; width=&quot;70%&quot;&gt;
+---</tw-passagedata><tw-passagedata pid="6" name="Prompts" tags="" position="650,25" size="100,100">&lt;img src=&quot;journal_prompts.png&quot; width=&quot;70%&quot;&gt;
 
-Vous consultez le **journal des prompts**.
-
-Un prompt récent est surligné :
+Le journal des prompts affiche :
 
 &gt; “Écris-moi une conclusion complète que je peux rendre telle quelle.”
 
-Plus bas, une liste de références apparaît.  
-Certaines vous semblent douteuses.
+Une liste de références apparaît plus bas.
 
 Que faites-vous ?
 
@@ -84,45 +77,38 @@ Que faites-vous ?
 [[Vérifier l’existence des sources-&gt;PromptsVerifier]]
 [[Supprimer toute la bibliographie-&gt;PromptsSupprimer]]
 
----</tw-passagedata><tw-passagedata pid="7" name="PromptsUtiliser" tags="" position="775,25" size="100,100">Vous décidez de faire confiance à l’IA.
+---</tw-passagedata><tw-passagedata pid="7" name="PromptsUtiliser" tags="" position="775,25" size="100,100">Vous faites confiance à l’IA.
 
 Ce choix est risqué.  
 Une erreur pourrait passer inaperçue.
 
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="8" name="PromptsSupprimer" tags="" position="900,25" size="100,100">Supprimer toutes les sources n’améliore pas la qualité académique.
-
-La rigueur reste insuffisante.
+---</tw-passagedata><tw-passagedata pid="8" name="PromptsSupprimer" tags="" position="900,25" size="100,100">Supprimer les sources ne renforce pas la rigueur académique.
 
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="9" name="PromptsVerifier" tags="" position="1025,25" size="100,100">Vous vérifiez chaque référence à l’aide de bases académiques fiables.
+---</tw-passagedata><tw-passagedata pid="9" name="PromptsVerifier" tags="" position="1025,25" size="100,100">Vous vérifiez chaque source dans des bases académiques.
 
-Certaines sources étaient inventées.  
+Certaines références sont inventées.  
 Vous corrigez la bibliographie.
 
-Un écran secondaire s’allume :
-
-🔑 **Vous trouvez un chiffre : 1**
+🔑 **Indice trouvé : 1**
 
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="10" name="Charte" tags="" position="1150,25" size="100,100">&lt;img src=&quot;charte.png&quot; alt=&quot;Charte universitaire&quot; width=&quot;70%&quot;&gt;
+---</tw-passagedata><tw-passagedata pid="10" name="Charte" tags="" position="1150,25" size="100,100">&lt;img src=&quot;charte.png&quot; width=&quot;70%&quot;&gt;
 
-Vous ouvrez la **charte universitaire sur l’usage de l’IA**.
+La charte universitaire décrit un cas :
+des données personnelles ont été copiées dans une IA.
 
-Un cas est mis en évidence :  
-des données personnelles ont été copiées dans un outil d’IA.
-
-Quelle décision respecte la charte ?
+Quelle décision est conforme ?
 
 [[Partager toutes les données-&gt;ChartePartager]]
 [[Anonymiser les données-&gt;CharteAnonymiser]]
-[[Changer d’outil d’IA-&gt;CharteChanger]]
+[[Changer d’outil-&gt;CharteChanger]]
 
----</tw-passagedata><tw-passagedata pid="11" name="ChartePartager" tags="" position="25,150" size="100,100">La charte est claire :  
-les données personnelles ne doivent jamais être partagées.
+---</tw-passagedata><tw-passagedata pid="11" name="ChartePartager" tags="" position="25,150" size="100,100">La charte interdit strictement le partage de données personnelles.
 
 [[Retour au laboratoire-&gt;Start]]
 
@@ -130,41 +116,31 @@ les données personnelles ne doivent jamais être partagées.
 
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="13" name="CharteAnonymiser" tags="" position="275,150" size="100,100">Vous supprimez les noms, emails et informations sensibles.
+---</tw-passagedata><tw-passagedata pid="13" name="CharteAnonymiser" tags="" position="275,150" size="100,100">Vous supprimez noms, emails et données sensibles.
 
-Un message apparaît sur l’écran :
-
-🔑 **Vous trouvez un chiffre : 9**
+🔑 **Indice trouvé : 9**
 
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="14" name="Sortie" tags="" position="400,150" size="100,100">&lt;img src=&quot;terminal.png&quot; alt=&quot;Terminal de sortie&quot; width=&quot;70%&quot;&gt;
+---</tw-passagedata><tw-passagedata pid="14" name="Sortie" tags="" position="400,150" size="100,100">&lt;img src=&quot;terminal.png&quot; width=&quot;70%&quot;&gt;
 
 Vous êtes devant le **terminal de sortie**.
 
-Un message s’affiche :
+Un dernier message s’affiche :
 
-&gt; *« Pour quitter le laboratoire, vous devez entrer le code final. »*
-
-Les indices que vous avez trouvés vous reviennent en mémoire.
-
-Un dernier message apparaît à l’écran :
-
-&gt; *« Aucun système automatique ne peut garantir l’intégrité académique.  
+&gt; *« Aucun système automatique ne garantit l’intégrité.  
 La vérification humaine est indispensable. »*
 
-Un chiffre apparaît lentement :
+🔑 **Indice final révélé : 4**
 
-🔑 **4**
+🖥️ **Entrez le code à 4 chiffres (format : 1234)**
 
-🖥️ **Entrez le code à 4 chiffres (format : 1-2-3-4)**
-
-(input-box: &quot;code&quot;)
+(input-box: bind $code)
 
 [[Valider le code-&gt;VerificationCode]]
 [[Retour au laboratoire-&gt;Start]]
 
----</tw-passagedata><tw-passagedata pid="15" name="VerificationCode" tags="" position="525,150" size="100,100">(if: (input-box: &quot;code&quot;) is &quot;7-1-9-4&quot;)[
+---</tw-passagedata><tw-passagedata pid="15" name="VerificationCode" tags="" position="525,150" size="100,100">(if: $code is &quot;7194&quot;)[
   Les chiffres s’illuminent en vert.
 
   🔓 Les portes s’ouvrent lentement.
@@ -175,12 +151,7 @@ Un chiffre apparaît lentement :
   🎉 **Mission accomplie.**
 ]
 (else:)[
-  Le terminal émet un bip d’erreur.
-
-  ❌ Le code est incorrect.
-
-  Peut-être avez-vous manqué un indice  
-  ou une correction essentielle.
+  ❌ Code incorrect.
 
   [[Réessayer-&gt;Sortie]]
 ]</tw-passagedata></tw-storydata>
